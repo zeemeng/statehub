@@ -1,4 +1,4 @@
-import { MessageQueue } from "./PubSubMQ.js";
+import { MessageQueue } from "./lib/PubSubMQ/index.js";
 
 /**
  * @callback Action
@@ -7,7 +7,7 @@ import { MessageQueue } from "./PubSubMQ.js";
  * @returns {any}
  */
 
-export default class Store {
+export default class StateHub {
   /**
    * @param {Object.<string, Action>} actions A dictionary where each key represents a defined "action" and
    * each value represents an associated function that will be invoke when such an "action" is dispatched.
@@ -32,7 +32,7 @@ export default class Store {
   }
 
   /**
-   * Dispatches an action defined in the dictionary specified to the `Store` class constructor.
+   * Dispatches an action defined in the dictionary specified to the `StateHub` class constructor.
    * @param {string} actionName Name of the defined action.
    * @param {any} payload Payload to be given as 2nd argument to the defined action.
    * @returns {boolean} `true` if action is invoked succesfully and the new state is pushed successfully
