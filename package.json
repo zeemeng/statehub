@@ -1,12 +1,35 @@
 {
   "name": "statehubjs",
-  "version": "0.1.0",
-  "description": "",
+  "version": "0.2.0",
+  "description": "StateHub is a centralized state management solution which provides reactivity and seamless intercommunication between application components, as well as ease of use for application authors.",
   "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "keywords": [
+    "state",
+    "state management",
+    "store",
+    "reactivity",
+    "web components",
+    "react",
+    "angular",
+    "vuejs",
+    "redux",
+    "rxjs"
+  ],
+  "author": {
+    "name": "Zi Han Meng",
+    "email": "zi.han.meng100@gmail.com"
+  },
+  "homepage": "https://github.com/zeemeng/statehub",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zeemeng/statehub.git"
+  },
+  "engines": {
+    "node": ">=13.2.0"
+  },
   "license": "MIT"
 }
